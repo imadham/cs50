@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div>
+    <table class="table table-bordered table-sm">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            {% for c in s2 %}
+            <th>{{ c }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            {% for i in range(s2.__len__() + 1) %}
+            <th>{{ i }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            <td></td>
+            <th>0</th>
+            {% for i in range(s2.__len__() + 1) %}
+            <td>{{ i }}</td>
+            {% endfor %}
+        </tr>
+        {% for i in range(0, s1.__len__()) %}
+        <tr>
+            <th>{{ s1[i] }}</th>
+            <th>{{ i + 1 }}</th>
+            {% for j in range(0, s2.__len__() + 1) %}
+            <td>{{ matrix[i+1][j][0] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</div>
+
+{% endblock %}

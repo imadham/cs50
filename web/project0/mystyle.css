@@ -1,0 +1,54 @@
+#mytopbar a, .study {
+  text-decoration: none; }
+
+@media (min-width: 500px) {
+  header {
+    background-color: #A91717;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin: 4px; } }
+@media (max-width: 499px) {
+  header {
+    background-color: #A91717;
+    text-align: left;
+    width: 100%;
+    padding: 2px;
+    margin: 2px; }
+
+  #mytopbar {
+    margin: auto;
+    height: 40px;
+    width: 200px; } }
+#mytopbar {
+  margin: auto;
+  height: 40px;
+  width: 500px; }
+
+#mytopbar a {
+  margin: 3px;
+  text-align: center;
+  color: white;
+  border-right: 1px solid #BB4545;
+  padding-right: 10px;
+  font-size: 16px; }
+
+#mytopbar a:hover {
+  font-size: 22px; }
+
+.study {
+  color: red; }
+
+.info {
+  float: left;
+  width: 50%; }
+
+div img {
+  float: right;
+  width: 50%; }
+
+.projects {
+  margin-left: 4px;
+  padding: 15px; }
+
+/*# sourceMappingURL=mystyle.css.map */
